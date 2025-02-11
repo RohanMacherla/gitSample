@@ -1,1 +1,1 @@
-# gitSample
+My first git repository
