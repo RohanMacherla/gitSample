@@ -51,12 +51,15 @@ app.delete("/studentDel/:id",(req,res)=>{
 app.use(express.json());
 app.post("/studentPost",(req,res)=>{
     let students = req.body
-    student.push(students)
-    res.status(200).json({
-        "Message":"Insterted Successfully",
-        "student":student
-    })
+    console.log(students)
+    res.send();
+    // student.push(students)
+    // res.status(200).json({
+    //     "Message":"Insterted Successfully",
+    //     "student":student
+    // })
 })
+
 app.put("/studentPut/:id",(req,res)=>{
     const id = parseInt(req.params.id)
     index = student.findIndex(s=>s.id===id)
