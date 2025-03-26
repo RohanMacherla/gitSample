@@ -12,7 +12,7 @@ class rectangle1 {
     }
      
 
-    ..
+
 }
 let r=new rectangle1(20,30);
 console.log(r);
